@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Proton/Pion 200 GeV Jets</title>
+    <!--bootstrap framework-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--social media fonts-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--Google font style from https://fonts.google.com/-->
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <!--My local css file-->
+    <link href="css/style.css" rel="stylesheet" >
+    <!--Multi browser support-->
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script-->
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!--header of page-->
+      <div class="row">
+        <div id="header"></div>
+        <script>
+          $(function () {
+            $("#footer").load("footer.html");
+          });
+        </script>
+      </div>
+      <div id="gridarea" class="row">
+        <div class="col-sm-3 visible-sm visible-md visible-lg visible-xl">
+          <!--menu of page-->
+          <div id="menu"></div>
+          <script>
+            $(function () {
+              $("#menu").load("menu.html");
+            });
+          </script>
+        </div>
+        <div class="col-sm-9 col-xs-12" >
+          <!--page content grid-->
+          <div class="row">
+            <div class="col-md-4">
+              <a href="https://getbootstrap.com/docs/3.3/css/#grid">
+                <img class="img-responsive img_main" src="http://placehold.it/300x200" alt="left image here">
+              </a>
+              <h3 class="text-center">Left item title</h3>
+              <p class="text-center">Left item description</p>
+            </div>
+            <div class="col-md-4">
+              <a href="https://getbootstrap.com/docs/3.3/css/#grid">
+                <img class="img-responsive img_main" src="http://placehold.it/300x200" alt="center image here">
+              </a>
+              <h3 class="text-center">Center item title</h3>
+              <p class="text-center">Center item description</p>
+            </div>
+            <div class="col-md-4">
+              <a href="https://getbootstrap.com/docs/3.3/css/#grid">
+                <img class="img-responsive img_main" src="http://placehold.it/300x200" alt="right image here">
+              </a>
+              <h3 class="text-center">Right item title</h3>
+              <p class="text-center">Right item description</p>
+            </div>
+          </div>
+          <!--spacer with a line-->
+          <div class="row">
+            <div class="col-md-12">
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <a href="https://getbootstrap.com/docs/3.3/css/#grid">
+                <img class="img-responsive img_main" src="http://placehold.it/300x200" alt="left image here">
+              </a>
+              <h3 class="text-center">Left item title</h3>
+              <p class="text-center">Left item description</p>
+            </div>
+            <div class="col-md-4">
+              <a href="https://getbootstrap.com/docs/3.3/css/#grid">
+                <img class="img-responsive img_main" src="http://placehold.it/300x200" alt="center image here">
+              </a>
+              <h3 class="text-center">Center item title</h3>
+              <p class="text-center">Center item description</p>
+            </div>
+            <div class="col-md-4">
+              <a href="https://getbootstrap.com/docs/3.3/css/#grid">
+                <img class="img-responsive img_main" src="http://placehold.it/300x200" alt="right image here">
+              </a>
+              <h3 class="text-center">Right item title</h3>
+              <p class="text-center">Right item description</p>
+            </div>
+          </div>
+          <!--end of page content grid-->
+        </div>
+      </div>
+      <!--spacer with a line-->
+      <div class="row">
+        <div class="col-xs-12">
+          <hr>
+        </div>
+      </div>
+      <!--Footer-->
+      <div class="row">
+        <div id="footer"></div>
+      </div>
+      <script>
+        $(function(){
+          $("#header").load("header.html");
+        });
+      </script>
+  </body>
+</html>
