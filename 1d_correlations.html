@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Proton/Pion 200 GeV Jets</title>
+    <!--bootstrap framework-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--social media fonts-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--Google font style from https://fonts.google.com/-->
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <!--My local css file-->
+    <link href="css/style.css" rel="stylesheet" >
+    <!--Multi browser support-->
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script-->
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!--header of page-->
+      <div class="row">
+        <div id="header"></div>
+        <script>
+          $(function () {
+            $("#footer").load("footer.html");
+          });
+        </script>
+      </div>
+      <div id="gridarea" class="row">
+        <div class="col-sm-3 visible-sm visible-md visible-lg visible-xl">
+          <!--menu of page-->
+          <div id="menu"></div>
+          <script>
+            $(function () {
+              $("#menu").load("menu.html");
+            });
+          </script>
+        </div>
+        <div class="col-sm-9 col-xs-12" >
+          <!--page content grid-->
+          <div class="row">
+            <div class="col-md-12">
+              <h3>1D (Δφ) Correlations</h3>
+              <p class="text-justify">Per trigger (Δφ) correlations for charged hadrons, protons and pion and for central or peripheral gold collisions and for different tranverse momentum intervals.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h3>Event Cuts</h3>
+              <p class="text-justify">
+                Using Run 10 AuAu 200 GeV HT triggered events (id = 260,504; 260,514; 260,524))<br>
+                Two centrality classes are explored, 20% most central events (refmult > 266) and 80-20 % most central events (10 < refmult < 266).<br>
+              <p>
+              <p style="font-weight:bold">all event cuts<p>
+              <p>
+                |zVertex| < 30.0 cm<br>
+                No V0's reconstructed<br>
+                |zVertexTPC - zVertexVPD| < 6.0 cm<br>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h3>Jet/High Tower Cuts</h3>
+              <p class="text-justify">Only events with at least on jet described below are considered for furthere analysis
+                The jets are reconstructed with the anti-kt jet finding algorithm (link) that is run over the events tracks with a ET(pT) cut of > 3.0 GeV(/c). The R parameter used is 0.4. A high tower (with and offline cut of ET > 5.0 GeV) is required to be present in the reconstructed jet.
+                |ηJET| < 0.6 (so that most of the jet area is included in the TPC acceptance)
+                The energy of charged tracks hitting the BEMC is completely removed from the jet energy contribution.<br><br>
+                Final reconstructed jet pT cut<br>
+                8 < pTJET < 20 GeV/c</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h3>Correlation Analysis Cuts</h3>
+              <p style="font-weight:bold">Track cuts<p>
+              <p>
+                DCA < 1.5 cm<br>
+                nHitsFits/nHitsPoss > 0.52<br>
+                nHitsFits > 15<br>
+                |eta| < 0.6<br>
+                p < 3.4 GeV/c<br>
+              </p>
+              <p style="font-weight:bold">TOF hits cuts<p>
+              <p>
+                beta > 0.05<br>
+                tof > 1.0<br>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="text-center">Δφ proton and pion - jet correlations and fits Model 1</h2>
+              <a class="btn btn-default btn-block" href="pdf/DeltaPhiModel1NoV2_central.pdf" role="button">
+                Central
+              </a>
+              <a class="btn btn-default btn-block" href="pdf/DeltaPhiModel1NoV2_peri.pdf" role="button">
+                Peripheral
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!--spacer with a line-->
+      <div class="row">
+        <div class="col-xs-12">
+          <hr>
+        </div>
+      </div>
+      <!--Footer-->
+      <div class="row">
+        <div id="footer"></div>
+      </div>
+      <script>
+        $(function(){
+          $("#header").load("header.html");
+        });
+      </script>
+  </body>
+</html>
