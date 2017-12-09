@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Proton/Pion 200 GeV Jets</title>
+    <!--bootstrap framework-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--social media fonts-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--Google font style from https://fonts.google.com/-->
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <!--My local css file-->
+    <link href="css/style.css" rel="stylesheet" >
+    <!--Multi browser support-->
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script-->
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!--header of page-->
+      <div class="row">
+        <div id="header"></div>
+        <script>
+          $(function () {
+            $("#footer").load("footer.html");
+          });
+        </script>
+      </div>
+      <div id="gridarea" class="row">
+        <div class="col-sm-3 visible-sm visible-md visible-lg visible-xl">
+          <!--menu of page-->
+          <div id="menu"></div>
+          <script>
+            $(function () {
+              $("#menu").load("menu.html");
+            });
+          </script>
+        </div>
+        <div class="col-sm-9 col-xs-12" >
+          <!--page content grid-->
+          <div class="row">
+            <div class="col-md-12">
+              <h3>TOF Efficiency</h3>
+              <p class="text-justify">
+                The TOF matching efficiency is defined as (). All these plots corresponde to AuAu 200 GeV Run 10. HT (trigId = 260504 , 260514, 260524)<br><br>
+
+                <p style="font-weight:bold">Event cuts<p>
+                |zVertex| < 30 cm<br>
+                Process V0's : false<br>
+                |VzTPC- VzVPD| < 13 cm<br>
+                Centrality ?? 10 %<br>
+                1,257,140 events.<br>
+                <p style="font-weight:bold">All tracks cuts:<p>
+                DCA < 1.5 cm<br>
+                nHitsFits/nHitsPoss > 0.52<br>
+                nHitsFits > 15<br>
+                |eta| < 1.0<br>
+                TOF hits cuts:<br>
+                beta > 0.05<br>
+                tof > 1.0<br>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <img class="img-responsive img_main" src="img/tof/TofMatch_Efficiency_Pt_Charged_CentHT_Correct.Total.gif" alt="Central tof efficiency">
+            </div>
+            <div class="col-md-4">
+              <img class="img-responsive img_main" src="img/tof/TofMatch_Efficiency_Pt_Charged_CentHT_Correct.Total.Zoom.gif" alt="Central tof effic mid momentum">
+            </div>
+            <div class="col-md-4">
+              <img class="img-responsive img_main" src="img/tof/TofMatch_Efficiency_Pt_Charged_CentHT_Correct.Total.Zoom2.gif" alt="Central tof effic low momentum">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <img class="img-responsive img_main" src="img/tof/TofMatch_Efficiency_Pt_Charged_CentHT_Correct.Total.Zoom3.gif" alt="Central tof effic high momentum">
+            </div>
+          </div>
+          <!--spacer with a line-->
+          <div class="row">
+            <div class="col-md-12">
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h3>PID TOF Efficiency</h3>
+              <p class="text-justify">
+                The TOF matching efficiency is defined as (). A pion rich sample was obtained by looking for K0s decay pions. The sample is very pure in pion content for pT less than about 1.5 GeV/c but highly contaminated above that value (the momentum used in the present analsys ). The sample is still rich in pions with a contamination of ~50% above 2 GeV/c From PDG: K0s mass = 0.497 GeV, tau: 8.956e-11 secs branching ration to pi_plus pi_minus = 69.20 -+ 0.05 %<br><br>
+
+                The topological cuts were based on (paper) but taking in cosideration my DCA cut of 1.5 cm. <br>
+                <p style="font-weight:bold">Topological cuts:<p>
+                  DCA of daughters < 0.8 cm<br>
+                  decay vector dot reco K0s vector > 0.0<br>
+                  DCA K0s < 0.75 cm<br>
+                  decay vector > 5.0 cm<br>
+                  K0s pT > 0.0 GeV/c<br>
+                  daughter global track one DCA > 0.6 cm<br>
+                  daughter global track two DCA < 1.5 cm<br><br>
+                  A furhter cut on the invariant mass of the decaying particle was impossed in order to focused on the signal region.<br>
+                  <p style="font-weight:bold">All tracks cuts:<p>
+                  DCA < 1.5 cm<br>
+                  nHitsFits/nHitsPoss > 0.52<br>
+                  nHitsFits > 15<br>
+                  |eta| < 0.6<br>
+                  |nσdEdx Pion| < 2.0<br><br>
+                  <p style="font-weight:bold">TOF hits cuts:<p>
+                  beta > 0.05
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h3>Central events</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-responsive img_main" src="img/tof/KshortInvMassNegativewCutsCentral.gif" alt="K short neg Cuts ">
+              <p class="text-center">K short invariant mass negative cuts; central events</p>
+            </div>
+            <div class="col-md-6">
+              <img class="img-responsive img_main" src="img/tof/KshortInvMassPositivewCutsCentral.gif" alt="K short pos Cuts">
+              <p class="text-center">K short invariant mass positive cuts; central events</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h3>Peripheral events</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-responsive img_main" src="img/tof/KshortInvMassNegativewCutsPeripheral.gif" alt="K short neg Cuts Peripheral">
+              <p class="text-center">K short invariant mass negative cuts; peripheral events</p>
+            </div>
+            <div class="col-md-6">
+              <img class="img-responsive img_main" src="img/tof/KshortInvMassPositivewCutsPeripheral.gif" alt="K short pos Cuts Peripheral">
+              <p class="text-center">K short invariant mass positive cuts; peripheral events</p>
+            </div>
+          </div>
+          <!--end of page content grid-->
+        </div>
+      </div>
+      <!--spacer with a line-->
+      <div class="row">
+        <div class="col-xs-12">
+          <hr>
+        </div>
+      </div>
+
+      <!--Footer-->
+      <div class="row">
+        <div id="footer"></div>
+      </div>
+      <script>
+        $(function(){
+          $("#header").load("header.html");
+        });
+      </script>
+  </body>
+</html>

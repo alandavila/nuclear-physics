@@ -27,6 +27,10 @@ a {
   color: #333;
 }
 
+#sublist {
+  padding-left: 35px;
+}
+
 .img_main {
   margin: auto;
   border-radius: 15px;
