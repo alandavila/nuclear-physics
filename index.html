@@ -126,7 +126,28 @@
           <div class="row">
             <div class="col-md-12">
               <h3 class="text-center">Jet finding under high background conditions</h3>
-              <p class="text-justify">Consise exmplanation of FastJet and a picture of Au Au jet in background</p>
+              <p class="text-justify">
+                It is clear from the picture above that finding jets (collimated stream of particles) among all the tracks present on a gold atoms collsion is
+                like finding a needle in a haystack. Fortunatley, fast jet finding algorithms capable of dealing with the collision's background have been developed.
+                The
+                <a class="text-primary" href="http://www.fastjet.fr/">
+                  FastJet
+                </a>
+                framework includes several such recombination algorithms.
+                Particles in a collision are distributed in a 2D grid of azimuth (&phi;) and
+                <a class="text-primary", href="https://en.wikipedia.org/wiki/Pseudorapidity">pseudorapidity (&eta;)</a>
+                (think angle from beam axis). Jet recombination algorithms
+                look for clusters of particles by finding each particle's nearest neighbor in (&phi;,&eta;) space. The particles' momentum (or its inverse)
+                are used to weight their distance in order to favor (or disfavor) clustering highly energetic particles first.
+                The algorithms iterates by merging
+                <a class="text-primary" href="https://en.wikipedia.org/wiki/Four-momentum">(4 vector adition)</a>
+                 the pair of particles that are closest.
+                The FastJet authors managed to use a clever trick by contructing Voroni diagrams (<i>N ln N</i> operation) in (&phi;,&eta;) space
+                and then just look for the nearest neighbor in the adjacent cells [<a class="text-primary" href="https://www.sciencedirect.com/science/article/pii/S0370269306010094">as described in their paper</a>].
+                which allows their algorithms to run in <i>N ln N</i> time instead of <i><Math>N<sup>3</sup></Math></i>. This is
+                crucial in order to be able to use such algorithms to find jets in millions of collisions with thousands of particles each in a non prohibitive amount of time.
+
+              </p>
             </div>
           </div>
           <div class="row">
