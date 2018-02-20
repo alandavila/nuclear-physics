@@ -53,7 +53,8 @@ a {
 }
 
 #gridarea {
-  background-image: url("../img/paper.gif");
+  /*background-image: url("../img/paper.gif");*/
+  background-color: whitesmoke;
 }
 /*
 .row {
