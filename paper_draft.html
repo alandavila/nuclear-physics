@@ -32,8 +32,8 @@
           });
         </script>
       </div>
-      <div id="gridarea" class="row">
-        <div class="col-sm-3">
+      <div class="row">
+        <div class="col-sm-12 col-xs-12">
           <!--menu of page-->
           <div id="menu"></div>
           <script>
@@ -42,78 +42,76 @@
             });
           </script>
         </div>
-        <div class="col-sm-9 col-xs-12" >
+      </div>
+      <div id="gridarea" class="row">
+        <div class="col-sm-12 col-xs-12" >
           <!--page content grid-->
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-offset-1 col-md-10">
               <h3 class="text-center">Abstract</h3>
               <p class="text-justify">Inclusive Proton/pion ratios show an enhancement at intermediate transverse momentum (pT ∼ 1.5-4.0 GeV/c) in central √sNN = 200 GeV Au+Au compared to peripheral Au+Au and p+p collisions. This phenomenon suggests that the particle production mechanism is not due to in vacuum fragmentation and it is consistent with recombination and coalescence models. The present study explores the particle production mechanism in surface-biased and medium interacting jets in central and peripheral Au+Au collisions. A high ET trigger selects a surface-biased jet. The trigger is used to enchance the quenching effects of the recoiling, medium traversing one. The jets are reconstructed with the FASTJET anti-kt algorithm with a ET (pT) 3.0 GeV(/c)cut on the event's towers(tracks) in order to minimize the heavy ion collision background. Particle identification of tracks below 3.0 GeV/c is achieved using STAR's TOF and TPC detectors. The protons(pions)- jet Δφ correlation are used to extract the hadrons composition of the jets in the near and away sides of the triggered jet direction. We report the proton/pion ratios in the near and away sides in central (0-20 %) and mid-peripheral (20-80 %) √sNN = 200 GeV Au+Au collisions. The near side proton/pion ratios are significantly lower than the inclusive ratios for both centralities. The away side proton/pion ratio in mid peripheral collisions is of similar magnitude to the near side ratio. The away side proton/pion ratio is significantly higher(although not as much as the inclusive ratio) than the near side ratio in the central collisions.</p>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-offset-1 col-md-10">
               <h3 class="text-center">Main Plots</h3>
             </div>
           </div>
           <!--spacer with a line-->
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-offset-1 col-md-10">
               <hr>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
               <img class="img-responsive img_main" src="img/Ratios.gif" alt="proton over pion ratios">
               <p class="text-justify">Proton/pion ratio as function of pT for jet triggered events in 20% most central (stars) and 20-80 % most central events (crosses). The near side ratios (towards highly biased trigger jet population) are in red and the away side ratios (recoiling jet) are in blue.</p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <img class="img-responsive img_main" src="img/RatiosCent.gif" alt="proton over pion central ratios">
               <p class="text-justify">Proton/pion ratios in 20 % most central, jet triggered, events at near (red) and away (blue) side from the trigger jet. Shown in black is the inclusive (azimuth integrated) ratio.</p>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
               <img class="img-responsive img_main" src="img/RatiosPeri.gif" alt="proton over pion peripheral ratios">
               <p class="text-justify">Proton/pion ratios in 20-80% most central, jet triggered, events at near (red) and away (blue) side from the trigger jet. Shown in black is the inclusive (azimuth integrated) ratio.</p>
             </div>
-            <div class="col-md-6">
+          </div>
+          <div class="row">
+            <div class="col-md-4">
               <img class="img-responsive img_main" src="img/PoverPiCentAndPeriPt2_4to3_0.gif" alt="proton over pion  delta phi">
               <p class="text-justify">Ratio of proton/pion as function of Δφ (not background subtracted) for 2.4 <= pT < 3.0 GeV/c. The black stars(white crosses) correspond to 20 % (20-80%) centrality.</p>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="text-center">Support Plots</h3>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <img class="img-responsive img_main" src="img/hPtTriggerInclusive_AntiKt_PerTriggerJet.gif" alt="jets momentum distribution">
-              <p class="text-justify">Per trigger jet pTjet distribution of 0-20 % and 20-80% most central events in red and blue respectively.</p>
-            </div>
-            <div class="col-md-6">
-              <img class="img-responsive img_main" src="img/PionPlusFFnSigvsInvBetaEta0_2mom_2_4to3_0.gif">
-              <p>nσπdE/dx(from TPC) vs Δβ-1/β-1 (from TOF) distribution at |η| < 0.2 and 2.4 <= p < 3.0 GeV/c using pion mass assumption. Three peaks corresponding to pion, kaons and protons can be appreciated.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <img class="img-responsive img_main" src="img/PionPlusFFInvBetaEta0_2mom2_8_3_0_Fit.gif" alt="Student's t distributions">
-              <p class="text-justify">Δβ-1/β-1 projection and Student's-t distribution fits for 20% HT AuAu data at |η| &lt; 0.2 and 2.4 &lt; = p &lt; 3.0 GeV/c. The yellow function corresponds to pions, red to kaons, green to protons and blue to their sum.</p>
-            </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <img class="img-responsive img_main" src="img/DeltaPhiPion20Cent2_4_3_0.gif" alt="central per trigger correlations">
               <p>Per trigger jet Δφ distribution of pions at 2.4 <= pT < 3.0 GeV/c in 20 % most central jet triggered events.</p>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
               <img class="img-responsive img_main" src="img/DeltaPhiProt20Cent2_4_3_0.gif" alt="central per trigger correlations">
               <p class="text-justify">Per trigger jet Δφ distribution of protons at 2.4 <= pT < 3.0 GeV/c in 20 % most central jet triggered events.</p>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-offset-1 col-md-10">
+              <h3 class="text-center">Support Plots</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <img class="img-responsive img_main" src="img/hPtTriggerInclusive_AntiKt_PerTriggerJet.gif" alt="jets momentum distribution">
+              <p class="text-justify">Per trigger jet pTjet distribution of 0-20 % and 20-80% most central events in red and blue respectively.</p>
+            </div>
+            <div class="col-md-4">
+              <img class="img-responsive img_main" src="img/PionPlusFFnSigvsInvBetaEta0_2mom_2_4to3_0.gif">
+              <p>nσπdE/dx(from TPC) vs Δβ-1/β-1 (from TOF) distribution at |η| < 0.2 and 2.4 <= p < 3.0 GeV/c using pion mass assumption. Three peaks corresponding to pion, kaons and protons can be appreciated.</p>
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive img_main" src="img/PionPlusFFInvBetaEta0_2mom2_8_3_0_Fit.gif" alt="Student's t distributions">
+                <p class="text-justify">Δβ-1/β-1 projection and Student's-t distribution fits for 20% HT AuAu data at |η| &lt; 0.2 and 2.4 &lt; = p &lt; 3.0 GeV/c. The yellow function corresponds to pions, red to kaons, green to protons and blue to their sum.</p>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-1 col-md-10">
               <h3 class="text-center">Conclusion</h3>
               <p class="text-justify">The p/π ratios at intermediate pT correlated with a jet trigger were reported. Proton (pion) - jet Δφ correlations were fit with a jet + background model to extract the identified hadron jet content at different pT bins. The near side ratio of surface biased jets is similar for central and mid-peripheral Au+Au collisions at √sNN = 200 GeV in the pT region 1.4 - 2.6 GeV/c. This indicates that our jet population for both centralities is similar and that the jets are indeed biased toward fragmenting in vacuum. The away and near side ratios of the mid peripheral collisions are also similar. In contrast, the away side ratio of the central √sNN = 200 GeV Au+Au events is higher than the near side ratio which is similar to the p/π in d+Au collisions. The fact that a higher ratio is observed in central events and not in mid-peripheral ones suggests that the p/π enhancement at mid pT might have a component originating from hard scattered parton-medium interaction and/or fragmentation function modification in central events.</p>
             </div>

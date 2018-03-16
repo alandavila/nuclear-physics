@@ -32,8 +32,8 @@
           });
         </script>
       </div>
-      <div id="gridarea" class="row">
-        <div class="col-sm-3">
+      <div class="row">
+        <div class="col-sm-12 col-xs-12">
           <!--menu of page-->
           <div id="menu"></div>
           <script>
@@ -42,21 +42,27 @@
             });
           </script>
         </div>
-        <div class="col-sm-9 col-xs-12" >
+      </div>
+      <div id="gridarea" class="row">
+        <div class="col-sm-12 col-xs-12" >
           <!--page content grid-->
           <div class="row">
-            <div class="col-md-12">
-              <h3>TOF Efficiency</h3>
-              <p class="text-justify">
+            <div class="col-md-offset-1 col-md-10">
+              <h3 class="text-center">TOF Efficiency</h3>
+              <p class="text-center">
                 The TOF matching efficiency is defined as (). All these plots corresponde to AuAu 200 GeV Run 10. HT (trigId = 260504 , 260514, 260524)<br><br>
 
-                <p style="font-weight:bold">Event cuts<p>
+                <p class="text-center" style="font-weight:bold">Event cuts
+                </p>
+                <p class="text-center">
                 |zVertex| < 30 cm<br>
                 Process V0's : false<br>
                 |VzTPC- VzVPD| < 13 cm<br>
                 Centrality ?? 10 %<br>
                 1,257,140 events.<br>
-                <p style="font-weight:bold">All tracks cuts:<p>
+              </p>
+                <p class="text-center" style="font-weight:bold">All tracks cuts:<p>
+                <p class="text-center">
                 DCA < 1.5 cm<br>
                 nHitsFits/nHitsPoss > 0.52<br>
                 nHitsFits > 15<br>
@@ -90,13 +96,15 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-12">
-              <h3>PID TOF Efficiency</h3>
+            <div class="col-md-offset-1 col-md-10">
+              <h3 class="text-center">PID TOF Efficiency</h3>
               <p class="text-justify">
                 The TOF matching efficiency is defined as (). A pion rich sample was obtained by looking for K0s decay pions. The sample is very pure in pion content for pT less than about 1.5 GeV/c but highly contaminated above that value (the momentum used in the present analsys ). The sample is still rich in pions with a contamination of ~50% above 2 GeV/c From PDG: K0s mass = 0.497 GeV, tau: 8.956e-11 secs branching ration to pi_plus pi_minus = 69.20 -+ 0.05 %<br><br>
 
                 The topological cuts were based on (paper) but taking in cosideration my DCA cut of 1.5 cm. <br>
-                <p style="font-weight:bold">Topological cuts:<p>
+              </p>
+                <p class="text-center" style="font-weight:bold">Topological cuts:</p>
+                <p class="text-center">
                   DCA of daughters < 0.8 cm<br>
                   decay vector dot reco K0s vector > 0.0<br>
                   DCA K0s < 0.75 cm<br>
@@ -105,15 +113,19 @@
                   daughter global track one DCA > 0.6 cm<br>
                   daughter global track two DCA < 1.5 cm<br><br>
                   A furhter cut on the invariant mass of the decaying particle was impossed in order to focused on the signal region.<br>
-                  <p style="font-weight:bold">All tracks cuts:<p>
+                </p>
+                <p class="text-center" style="font-weight:bold">All tracks cuts:<p>
+                  <p class="text-center">
                   DCA < 1.5 cm<br>
                   nHitsFits/nHitsPoss > 0.52<br>
                   nHitsFits > 15<br>
                   |eta| < 0.6<br>
                   |nσdEdx Pion| < 2.0<br><br>
-                  <p style="font-weight:bold">TOF hits cuts:<p>
+                </p>
+                  <p class="text-center" style="font-weight:bold">TOF hits cuts:</p>
+                <p class="text-center">
                   beta > 0.05
-              </p>
+                </p>
             </div>
           </div>
           <div class="row">
