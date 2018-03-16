@@ -32,8 +32,8 @@
           });
         </script>
       </div>
-      <div id="gridarea" class="row">
-        <div class="col-sm-3">
+      <div class="row">
+        <div class="col-sm-12 col-xs-12">
           <!--menu of page-->
           <div id="menu"></div>
           <script>
@@ -42,23 +42,25 @@
             });
           </script>
         </div>
-        <div class="col-sm-9 col-xs-12" >
+      </div>
+      <div id="gridarea" class="row">
+        <div class="col-sm-12 col-xs-12" >
           <!--page content grid-->
           <div class="row">
-            <div class="col-md-12">
-              <h3>1D (Δφ) Correlations</h3>
+            <div class="col-md-offset-1 col-md-10">
+              <h3 class="text-center">1D (Δφ) Correlations</h3>
               <p class="text-justify">Per trigger (Δφ) correlations for charged hadrons, protons and pion and for central or peripheral gold collisions and for different tranverse momentum intervals.</p>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-12">
-              <h3>Event Cuts</h3>
+            <div class="col-md-offset-1 col-md-10">
+              <h3 class="text-center">Event Cuts</h3>
               <p class="text-justify">
                 Using Run 10 AuAu 200 GeV HT triggered events (id = 260,504; 260,514; 260,524))<br>
                 Two centrality classes are explored, 20% most central events (refmult > 266) and 80-20 % most central events (10 < refmult < 266).<br>
               <p>
-              <p style="font-weight:bold">all event cuts<p>
-              <p>
+              <p class="text-center"style="font-weight:bold">all event cuts<p>
+              <p class="text-center">
                 |zVertex| < 30.0 cm<br>
                 No V0's reconstructed<br>
                 |zVertexTPC - zVertexVPD| < 6.0 cm<br>
@@ -66,8 +68,8 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-12">
-              <h3>Jet/High Tower Cuts</h3>
+            <div class="col-md-offset-1 col-md-10">
+              <h3 class="text-center">Jet/High Tower Cuts</h3>
               <p class="text-justify">Only events with at least on jet described below are considered for furthere analysis
                 The jets are reconstructed with the anti-kt jet finding algorithm (link) that is run over the events tracks with a ET(pT) cut of > 3.0 GeV(/c). The R parameter used is 0.4. A high tower (with and offline cut of ET > 5.0 GeV) is required to be present in the reconstructed jet.
                 |ηJET| < 0.6 (so that most of the jet area is included in the TPC acceptance)
@@ -77,25 +79,25 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-12">
-              <h3>Correlation Analysis Cuts</h3>
-              <p style="font-weight:bold">Track cuts<p>
-              <p>
+            <div class="col-md-offset-1 col-md-10">
+              <h3 class="text-center">Correlation Analysis Cuts</h3>
+              <p class="text-center" style="font-weight:bold">Track cuts<p>
+              <p class="text-center">
                 DCA < 1.5 cm<br>
                 nHitsFits/nHitsPoss > 0.52<br>
                 nHitsFits > 15<br>
                 |eta| < 0.6<br>
                 p < 3.4 GeV/c<br>
               </p>
-              <p style="font-weight:bold">TOF hits cuts<p>
-              <p>
+              <p class="text-center" style="font-weight:bold">TOF hits cuts<p>
+              <p class="text-center">
                 beta > 0.05<br>
                 tof > 1.0<br>
               </p>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-offset-1 col-md-10">
               <h2 class="text-center">Δφ proton and pion - jet correlations and fits Model 1</h2>
               <a class="btn btn-default btn-block" href="pdf/DeltaPhiModel1NoV2_central.pdf" role="button">
                 Central
