@@ -2,7 +2,7 @@
 
 Responsive website (Mobile/Tablet/PC) using Bootstrap containing my thesis analysis note
 
-Web site link: https://davila-nuclear.herokuapp.com
+Web site link: www.davila-nuclear.com
 
 PhD thesis link: http://www.rhip.utexas.edu/theses.html
 
